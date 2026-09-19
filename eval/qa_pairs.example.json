@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rag-001",
+    "question": "What is the difference between RAG-Sequence and RAG-Token models?",
+    "expected_answer": "RAG-Sequence uses the same retrieved document set to generate the entire answer sequence, whereas RAG-Token can draw on different documents for each individual token generated across the sequence.",
+    "gold_sources": [
+      {
+        "document": "lewis_et_al_2020_rag.pdf",
+        "section": "Section 2.1 Models"
+      }
+    ],
+    "keywords": ["RAG-Sequence", "RAG-Token", "retrieved document", "token"]
+  },
+  {
+    "id": "rag-002",
+    "question": "Which retriever does the original RAG paper use for non-parametric memory?",
+    "expected_answer": "The original RAG paper uses Dense Passage Retrieval (DPR) as its non-parametric retriever, based on a bi-encoder architecture with Maximum Inner Product Search (MIPS).",
+    "gold_sources": [
+      {
+        "document": "lewis_et_al_2020_rag.pdf",
+        "section": "Section 2.2 Retriever: DPR"
+      }
+    ],
+    "keywords": ["Dense Passage Retrieval", "DPR", "bi-encoder", "MIPS"]
+  },
+  {
+    "id": "rag-003",
+    "question": "What generator architecture is used in Lewis et al. 2020?",
+    "expected_answer": "The generator is BART-large, a seq2seq transformer model pre-trained with a denoising objective.",
+    "gold_sources": [
+      {
+        "document": "lewis_et_al_2020_rag.pdf",
+        "section": "Section 2.3 Generator: BART"
+      }
+    ],
+    "keywords": ["BART-large", "seq2seq", "generator"]
+  },
+  {
+    "id": "rag-004",
+    "question": "How does RAG support index hot-swapping according to Section 4.5?",
+    "expected_answer": "Because the non-parametric memory is separate from the parametric generator, the document index can be swapped or updated (e.g., from a 2016 Wikipedia dump to a 2018 dump) without retraining the model.",
+    "gold_sources": [
+      {
+        "document": "lewis_et_al_2020_rag.pdf",
+        "section": "Section 4.5 Index Hot-Swapping"
+      }
+    ],
+    "keywords": ["hot-swapping", "Wikipedia dump", "without retraining"]
+  }
+]
