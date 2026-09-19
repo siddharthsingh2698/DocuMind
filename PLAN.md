@@ -8,23 +8,26 @@ Total estimated time: **4–6 weeks** at ~10–15 hrs/week (part-time alongside 
 
 ## Week 0 — Setup & Corpus Selection (2–3 hrs)
 
-- [ ] Pick a **specific, real corpus** — not a random PDF. Good options:
+- [x] Pick a **specific, real corpus** — not a random PDF. Good options:
   - Docs of a real open-source project (e.g., FastAPI docs, a library you use)
   - A stack of 15–20 ML/CS research papers (meta and on-theme, given this project)
   - Your college department's course materials / an internship's public docs
-- [ ] Create GitHub repo `documind` with README stub, MIT license, `.gitignore`
-- [ ] Set up project skeleton:
+  *(Selected: Curated 15 landmark Dense Retrieval & RAG research papers, anchored by Lewis et al. 2020)*
+- [x] Create GitHub repo `documind` with README stub, MIT license, `.gitignore`
+- [x] Set up project skeleton:
   ```
   documind/
     api/
     frontend/
     eval/
+    corpus/
     docker-compose.yml
     PLAN.md / PRD.md / ARCHITECTURE.md
   ```
-- [ ] Set up Python env (`uv` or `venv`), Node env for frontend
-- [ ] Sign up for LLM API (OpenAI/Anthropic) — set a hard spending cap
-- **Checkpoint:** repo exists, README explains the goal, docs committed.
+- [x] Set up Python env (`uv` or `venv`), Node env for frontend
+- [x] Sign up for LLM API (OpenAI/Anthropic) — set a hard spending cap
+  *(Configured via `.env.example` with spending cap guidance in README)*
+- **Checkpoint:** repo exists, README explains the goal, docs committed. [COMPLETED]
 
 ---
 
